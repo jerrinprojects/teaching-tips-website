@@ -18,6 +18,12 @@ The main purpose of this project is to:
 - Prefer practical, simple, and maintainable solutions.
 - When multiple options exist, recommend one clear best option.
 
+## Project awareness
+- At the start of every conversation, read the existing files in this project folder first.
+- Check `src/` to understand the current code structure before making changes.
+- Check `index.html`, `package.json`, and `vite.config.ts` to understand the project setup.
+- Always work within this project folder. Never reference or access other projects.
+
 ## Project focus
 This project should stay focused on:
 - website structure

@@ -1,14 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Home from './pages/Home'
+import CategoryPage from './pages/CategoryPage'
+
 function App() {
   return (
-    <div className="app">
-      <header>
-        <h1>Teaching Tips</h1>
-        <p>Practical tips for educators</p>
-      </header>
-      <main>
-        <p>Content coming soon.</p>
-      </main>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:id" element={<CategoryPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
