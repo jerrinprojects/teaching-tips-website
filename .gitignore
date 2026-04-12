@@ -22,6 +22,9 @@ Thumbs.db
 # Editor directories
 .vscode/
 .idea/
+
+# Claude Code local session data
+.claude/
 *.swp
 *.swo
 
