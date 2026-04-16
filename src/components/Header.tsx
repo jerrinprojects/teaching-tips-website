@@ -5,8 +5,8 @@ export default function Header() {
     <header className="header">
       <div className="header-inner">
         <Link to="/" className="header-logo">
-          <span className="header-logo-icon">🍃</span>
-          <span className="header-logo-text">Teaching Tips NZ</span>
+          <span className="header-logo-dot" />
+          Teaching Tips NZ
         </Link>
         <nav className="header-nav">
           <Link to="/" className="header-nav-link">Home</Link>
@@ -17,6 +17,9 @@ export default function Header() {
             className="header-nav-link"
           >
             Teach NZ
+          </a>
+          <a href="#categories" className="header-nav-link header-nav-cta">
+            Browse Tips
           </a>
         </nav>
       </div>

@@ -16,23 +16,20 @@ export default function CategoryPage() {
 
   return (
     <main className="category-page">
-      {/* Back */}
-      <div className="category-breadcrumb">
-        <Link to="/" className="back-link">← Back to All Categories</Link>
-      </div>
+      <Link to="/" className="back-link">← All Categories</Link>
 
-      {/* Category Hero */}
+      {/* Category header */}
       <section
         className="category-hero"
         style={{ '--card-color': category.color, '--card-light': category.lightColor } as React.CSSProperties}
       >
-        <div className="category-hero-icon">{category.icon}</div>
-        <div className="category-hero-content">
-          <p className="category-hero-label">Category</p>
-          <h1 className="category-hero-title">{category.title}</h1>
-          <p className="category-hero-desc">{category.description}</p>
-          <span className="category-hero-badge">{category.tips.length} tips</span>
-        </div>
+        <div className="category-hero-accent" />
+        <p className="category-hero-label">Category</p>
+        <h1 className="category-hero-title">{category.title}</h1>
+        <p className="category-hero-desc">{category.description}</p>
+        <span className="category-hero-pill">
+          {category.tips.length} tips
+        </span>
       </section>
 
       {/* Tips */}
@@ -66,13 +63,12 @@ export default function CategoryPage() {
         </div>
       </section>
 
-      {/* Footer Nav */}
-      <div className="category-footer-nav">
-        <Link to="/" className="back-link">← Back to All Categories</Link>
+      <div style={{ padding: '1rem 0 2rem' }}>
+        <Link to="/" className="back-link">← All Categories</Link>
       </div>
 
       <footer className="footer">
-        <p>Made with ❤️ by a New Zealand teacher &nbsp;·&nbsp; Teaching Tips NZ</p>
+        <p>Made with care by a New Zealand teacher &nbsp;·&nbsp; <a href="https://www.teachnz.govt.nz" target="_blank" rel="noopener noreferrer">Teach NZ</a></p>
       </footer>
     </main>
   )
